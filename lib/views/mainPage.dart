@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:interactive_e_book_system/views/Contentpage.dart';
+import 'package:interactive_e_book_system/views/ExerciseTab2.dart';
 import 'package:interactive_e_book_system/views/Exercisetab.dart';
 import 'package:interactive_e_book_system/views/TermsPage.dart';
 
@@ -19,18 +21,18 @@ backgroundColor: Colors.amber,
               Tab(text: "Content"),
               Tab(text: "Exercises"),
               Tab(text: "Glossary"),
-              Tab(text: "Exer"),
+              Tab(text: "Exercises"),
             ],
           ),
         ),
 
         body: TabBarView(
           children: [
-            Center(child: Text("Home")),
+            ContentPage(),
             ExerciseTab(),
             TermsPage(),
             //Center(child: Text("Profile")),
-            Center(child: Text("Settings")),
+            Exercise(),
           ],
         ),
       ),
