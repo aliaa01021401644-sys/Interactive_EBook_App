@@ -1,11 +1,13 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:interactive_e_book_system/core/Widget/pdfListScreen.dart';
-import 'package:interactive_e_book_system/core/Widget/videosurvices/videoviewmodel.dart';
+// import 'package:interactive_e_book_system/core/Widget/pdfListScreen.dart';
+// import 'package:interactive_e_book_system/core/Widget/videosurvices/videoviewmodel.dart';
+import 'package:interactive_e_book_system/modules/pdf/pdf_list_screen.dart';
 import 'package:interactive_e_book_system/viewmodels/ContentViewModel.dart';
 import 'package:interactive_e_book_system/views/Exercisetab.dart';
 import 'package:interactive_e_book_system/views/VedioPage.dart';
+import 'package:interactive_e_book_system/views/htmlpage.dart';
 import 'package:provider/provider.dart';
 
 class ContentPage extends StatefulWidget {
@@ -85,14 +87,27 @@ onTap: () {
 
 if (obj["type"] == "pdf") {
  Navigator.push(
+  context,
+  MaterialPageRoute(
+   builder: (_) =>
+
+       PdfListScreen(),
+//ExerciseTab(),
+  ),
+ );
+}else if (obj["type"] == "html") {
+Navigator.push(
 context,
 MaterialPageRoute(
 builder: (_) =>
 
-PdfListScreen(),
-//ExerciseTab(),
-),
-);
+       HtmlPage(
+       url: obj["url"],
+       title: obj["title"],
+      ),
+     ),
+    );
+
 
 } else {
 

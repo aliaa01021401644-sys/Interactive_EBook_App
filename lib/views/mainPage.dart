@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return DefaultTabController(
-      length: 4,
+      length: 3,
       child: Scaffold(
         appBar: AppBar(
 backgroundColor: Colors.amber,
@@ -20,7 +20,7 @@ backgroundColor: Colors.amber,
           bottom: TabBar(
             tabs: [
               Tab(text: "Content"),
-              Tab(text: "Exercises"),
+             // Tab(text: "Exercises"),
               Tab(text: "Glossary"),
               Tab(text: "Exercises"),
             ],
@@ -30,7 +30,7 @@ backgroundColor: Colors.amber,
         body: TabBarView(
           children: [
             ContentPage(),
-            ExerciseTab(),
+           // ExerciseTab(),
             GlossaryPage(),
             //TermsPage(),
             //Center(child: Text("Profile")),

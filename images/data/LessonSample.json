@@ -85,12 +85,12 @@
                         "aimObjects": [
                             {
                                 "id": "698f3803425efb7af5f10fec",
-                                "title": "العدد الذري",
+                                "title": "HTML Lesson",
                                 "nameInLesson": "العدد الذري",
                                 "type": "html",
                                 "ir": "explanation",
                                 "topic": "Video Object",
-                                "url": "https://scube-applications-media54cbabfc-u3d19945rbtv.s3.amazonaws.com/molecules_video_data/f469-42d5-9d45-b2abaf392d0d_80f447bb-dac0-4a8a-8613-c730f4f47e8b_Molecular_Structure_intro_video.mp4"
+                                "url": "https://scube-applications-media54cbabfc-u3d19945rbtv.s3.eu-west-1.amazonaws.com/new-interactive-objects/objects/%D8%A7%D9%84%D8%B9%D8%AF%D8%AF-%D8%A7%D9%84%D8%B0%D8%B1%D9%8A-675c24110d13c2000311fee5.html"
                             }
                         ],
                         "roles": [

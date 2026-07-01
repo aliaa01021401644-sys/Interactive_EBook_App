@@ -151,7 +151,7 @@ class _ExerciseState extends State<Exercise> {
               trailing: const Icon(Icons.arrow_forward),
 
               onTap: () {
-                openUrl(q.url); // 👈 هنا الاختيار ثم فتح الرابط
+                openUrl(q.url);
               },
             );
           },
